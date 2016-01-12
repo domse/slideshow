@@ -1,10 +1,6 @@
 from bottle import route, run, template, static_file
 from glob import glob
 
-@route('/hello/<name>')
-def index(name):
-    return template('<b>Hello {{name}}</b>!', name=name)
-
 @route('/')
 def index():
 	res = ''
