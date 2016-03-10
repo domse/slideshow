@@ -11,10 +11,8 @@ def index():
 		picset.add('/image/' + picture[15:])
 	return dict(picturelist=picset)
 
-
-
 @route('/list/')
-def list():
+def retlist():
 	picset = set()
 	picturelist = glob("./data/picture/*.jpg")
 	for picture in picturelist:

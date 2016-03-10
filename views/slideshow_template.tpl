@@ -7,7 +7,7 @@
 <body>
   <script>
     $(function() {
-      $(".rslides").responsiveSlides({maxwidth: 800});
+      $(".rslides").responsiveSlides();
     });
   </script>
   <style>
